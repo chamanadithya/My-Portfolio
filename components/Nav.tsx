@@ -60,12 +60,12 @@ export default function Nav() {
 
   return (
     <>
-      <header className={scrolled ? "scrolled" : ""} id="top">
+      <header className={`site-header${scrolled ? " scrolled" : ""}`} id="top">
         <div className="wrap nav">
-          <a href="#top" className="brand"><span className="mark">C</span>Chaman</a>
+          <a href="/" className="brand"><span className="mark">C</span>Chaman</a>
           <nav className="nav-links">
             {NAV_LINKS.map((l) => (
-              <a key={l.id} href={`#${l.id}`} className={active === l.id ? "active" : ""}>
+              <a key={l.id} href={`/#${l.id}`} className={active === l.id ? "active" : ""}>
                 {l.label}
               </a>
             ))}
@@ -101,7 +101,7 @@ export default function Nav() {
             <button className="icon-btn" aria-label="Toggle dark mode" onClick={toggleTheme}>
               {theme === "dark" ? <Moon /> : <Sun />}
             </button>
-            <a href="#contact" className="btn">Let&apos;s Talk <ArrowUpRight /></a>
+            <a href="/#contact" className="btn">Let&apos;s Talk <ArrowUpRight /></a>
             <button className="icon-btn menu-toggle" aria-label="Open menu"
               onClick={() => setMenuOpen(true)}>
               <Menu />
@@ -115,7 +115,7 @@ export default function Nav() {
           <Close />
         </button>
         {NAV_LINKS.filter((l) => l.id !== "top").map((l) => (
-          <a key={l.id} href={`#${l.id}`} onClick={() => setMenuOpen(false)}>{l.label}</a>
+          <a key={l.id} href={`/#${l.id}`} onClick={() => setMenuOpen(false)}>{l.label}</a>
         ))}
       </div>
     </>

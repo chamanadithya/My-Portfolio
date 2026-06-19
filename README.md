@@ -48,6 +48,17 @@ lib/
   data.ts            All content: techs, skills, experience, projects, nav links
 ```
 
+## Pages
+
+- `/` — the full single-page portfolio.
+- `/work/[slug]` — a dedicated detail page for each project (overview, what I
+  worked on, role/timeline/stack sidebar, an image gallery, and prev/next
+  navigation). Clicking any project card on the home page opens its detail page.
+
+Project slugs live in `lib/data.ts` (`traces`, `teacher-file-sms`,
+`nchanter-pos`, `ticket-booking-java`). Add a new project by appending an entry
+to the `PROJECTS` array — its detail page is generated automatically.
+
 ## Editing content
 
 All copy lives in **`lib/data.ts`** (skills, experience, projects, tech list) and in the

@@ -1,4 +1,6 @@
+import Link from "next/link";
 import Reveal from "./Reveal";
+import ProjectArt from "./ProjectArt";
 import { PROJECTS } from "@/lib/data";
 import { ArrowUpRight } from "./Icons";
 
@@ -17,9 +19,9 @@ export default function Projects() {
       </div>
       <div className="work-grid">
         {PROJECTS.map((p, i) => (
-          <Reveal as="article" className="project" key={i}>
+          <Reveal as={Link} href={`/work/${p.slug}`} className="project" key={i}>
             <div className="thumb">
-              <div className="ph inner"><span>{p.ph}</span></div>
+              <ProjectArt kind={p.art} cover={p.cover} alt={p.title} className="inner" />
               <div className="overlay">
                 <div className="o-arrow"><ArrowUpRight /></div>
               </div>
