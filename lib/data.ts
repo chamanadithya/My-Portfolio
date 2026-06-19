@@ -107,6 +107,7 @@ export const PROJECTS: Project[] = [
     tags: ["Full-Stack", "Role-Based Auth", "SMS", "Records"],
     ph: "system screens",
     art: "records",
+    cover: "/projects/teacher-sms.jpg",
     category: "Full-Stack System",
     role: "Designer & Developer",
     overview:
