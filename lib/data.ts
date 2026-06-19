@@ -156,6 +156,7 @@ export const PROJECTS: Project[] = [
     tags: ["Java", "OOP", "File Handling", "CLI"],
     ph: "java console app",
     art: "terminal",
+    cover: "/projects/ticket-booking.jpg",
     category: "Java Application",
     role: "Developer",
     overview:
