@@ -131,6 +131,7 @@ export const PROJECTS: Project[] = [
     tags: ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "Tailwind"],
     ph: "pos + analytics",
     art: "pos",
+    cover: "/projects/nchanter-pos.png",
     category: "Full-Stack Application",
     role: "Full-Stack Developer",
     overview:
