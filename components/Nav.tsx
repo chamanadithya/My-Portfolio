@@ -62,7 +62,7 @@ export default function Nav() {
     <>
       <header className={`site-header${scrolled ? " scrolled" : ""}`} id="top">
         <div className="wrap nav">
-          <a href="/" className="brand"><span className="mark">C</span>Chaman</a>
+          <a href="/" className="brand">Chaman Adithya</a>
           <nav className="nav-links">
             {NAV_LINKS.map((l) => (
               <a key={l.id} href={`/#${l.id}`} className={active === l.id ? "active" : ""}>
@@ -71,6 +71,7 @@ export default function Nav() {
             ))}
           </nav>
           <div className="nav-right">
+            {/* Settings button — uncomment to re-enable
             <div className="settings-wrap" ref={settingsRef}>
               <button className="icon-btn" aria-label="Display settings"
                 onClick={() => setSettingsOpen((v) => !v)}>
@@ -98,6 +99,7 @@ export default function Nav() {
                 </div>
               )}
             </div>
+            */}
             <button className="icon-btn" aria-label="Toggle dark mode" onClick={toggleTheme}>
               {theme === "dark" ? <Moon /> : <Sun />}
             </button>

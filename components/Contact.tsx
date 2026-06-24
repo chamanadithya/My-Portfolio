@@ -18,7 +18,7 @@ export default function Contact() {
         </div>
         <div className="contact-foot">
           <div className="foot-brand">
-            <div className="brand"><span className="mark">C</span>Chaman Adithya</div>
+            <div className="brand">Chaman Adithya</div>
             <p>
               UI/UX &amp; Frontend Developer building thoughtful digital products with design
               and code. Open to freelance projects and internships.
