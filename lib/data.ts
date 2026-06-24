@@ -178,7 +178,7 @@ export const getProject = (slug: string) => PROJECTS.find((p) => p.slug === slug
 
 export const NAV_LINKS = [
   { id: "top", label: "Home" },
-  { id: "about", label: "About" },
+  // { id: "about", label: "About" },
   { id: "skills", label: "Skills" },
   { id: "work", label: "Work" },
   { id: "experience", label: "Experience" },

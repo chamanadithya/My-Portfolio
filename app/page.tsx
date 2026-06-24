@@ -1,7 +1,7 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
-import About from "@/components/About";
+// import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
@@ -14,7 +14,7 @@ export default function Home() {
       <main>
         <Hero />
         <Marquee />
-        <About />
+        {/* <About /> */}
         <Skills />
         <Experience />
         <Projects />
