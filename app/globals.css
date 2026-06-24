@@ -104,7 +104,7 @@ a{ color:inherit; text-decoration:none; }
 }
 .site-header.scrolled{ border-bottom-color:var(--border); }
 .nav{ display:flex; align-items:center; justify-content:space-between; height:72px; gap:24px; }
-.brand{ display:flex; align-items:center; gap:10px; font-weight:700; font-size:18px; letter-spacing:-.02em; }
+.brand{ display:flex; align-items:center; gap:10px; font-family:"Dancing Script", cursive; font-weight:700; font-size:22px; letter-spacing:.01em; }
 .brand .mark{
   width:30px; height:30px; border-radius:9px; background:var(--fg); color:var(--bg);
   display:grid; place-items:center; font-family:var(--headline-font); font-weight:700; font-size:16px;
@@ -229,6 +229,12 @@ a{ color:inherit; text-decoration:none; }
 .card.dark .arrow{ border-color:var(--inverse-border); }
 .card.dark::after{ content:""; position:absolute; right:-60px; bottom:-60px; width:200px; height:200px; border-radius:50%; border:1px solid var(--inverse-border); opacity:.5; }
 .card.dark::before{ content:""; position:absolute; right:-110px; bottom:-110px; width:280px; height:280px; border-radius:50%; border:1px solid var(--inverse-border); opacity:.3; }
+html[data-theme="dark"] .card.dark{ background:#ffffff; border-color:#e6e6e1; color:#0e0e0d; }
+html[data-theme="dark"] .card.dark p{ color:#6f6f6a; }
+html[data-theme="dark"] .card.dark .tags span{ color:#6f6f6a; border-color:#e6e6e1; }
+html[data-theme="dark"] .card.dark .arrow{ border-color:#e6e6e1; color:#0e0e0d; }
+html[data-theme="dark"] .card.dark::after{ border-color:#e6e6e1; }
+html[data-theme="dark"] .card.dark::before{ border-color:#e6e6e1; }
 
 /* ============================ EXPERIENCE ============================ */
 .exp{ padding-top:var(--pad-y); background:var(--card); margin-top:var(--pad-y); }
