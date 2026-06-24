@@ -94,6 +94,7 @@ export default function ProjectPage({ params }: Params) {
           </aside>
         </div>
 
+        {/* Gallery — uncomment when real screenshots are ready
         <section className="detail-gallery">
           {project.gallery.map((g, i) => (
             <Reveal key={i}>
@@ -101,6 +102,7 @@ export default function ProjectPage({ params }: Params) {
             </Reveal>
           ))}
         </section>
+        */}
 
         <nav className="detail-nav">
           <Link href={`/work/${prev.slug}`} className="detail-nav-link prev">
