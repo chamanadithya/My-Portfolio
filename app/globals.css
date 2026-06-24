@@ -399,6 +399,11 @@ footer.legal{ text-align:center; padding:30px 0; color:var(--faint); font-size:1
   .contact-top,.contact-foot,.contact-bottom{ padding-left:30px; padding-right:30px; }
   .hero h1{ font-size:clamp(58px,18vw,120px); }
   .hero-portrait{ width:46vw; }
+  /* Shrink nav buttons on mobile */
+  .nav .btn{ font-size:12px; padding:8px 13px; gap:5px; }
+  .nav .btn svg{ width:13px; height:13px; }
+  .icon-btn{ width:34px; height:34px; }
+  .icon-btn svg{ width:15px; height:15px; }
 }
 @media (max-width:560px){
   .wrap{ padding:0 20px; }
