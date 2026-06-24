@@ -17,7 +17,7 @@ export default function Skills() {
         <div className="cards">
           {SKILLS.map((s, i) => (
             <Reveal className={`card${s.dark ? " dark" : ""}`} key={i}>
-              <div className="arrow"><ArrowUpRight /></div>
+              {/* <div className="arrow"><ArrowUpRight /></div> */}
               <h3>{s.title}</h3>
               <p>{s.body}</p>
               <div className="tags">
